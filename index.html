@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Qualific</title>
+
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <h5>Miljö- och byggavdelningen</h5>
+    <h6>Anmälan enligt <br />plan- och byggavdelningen (2011:338)</h6>
+    <br />
+    <h5>Fastighet och Byggherre (sökande)</h5>
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Fastighetsbeteckning" id="Fastighetsbeteckning" type="text" class="validate">
+                    <label for="fastighetsbeteckning"></label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Telefon" id="Telefon" type="text" class="validate">
+                    <label for="telefon"></label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Fastighetens adress" id="Fastighetens-adress" type="text" class="validate">
+                    <label for="fastighetens-adress"></label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Byggherrens namn" id="Byggherrens-namn" type="text" class="validate">
+                    <label for="byggherrens-namn"></label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Person-/organisationummer" id="Person-organisationr" type="text"
+                        class="validate">
+                    <label for="person-/organisationr."></label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Byggherrens adress" id="Byggherrens-adress" type="text" class="validate">
+                    <label for="byggherrens-adress"></label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Postnummer" id="Postnummer" type="text" class="validate">
+                    <label for="postnummer"></label>
+                </div>
+                <div class="input-field col s6">
+                    <input placeholder="Postort" id="Postort" type="text" class="validate">
+                    <label for="postort"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="E-mail" id="email" type="email" class="validate">
+                    <label for="email"></label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br />
+    <h5>Ärendets art</h5>
+    <div class="row">
+        <p class="col s12 m4 l2">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Nybyggnad</span>
+            </label>
+        </p>
+        <p class="col s12 m4 l2">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Tillbyggnad</span>
+            </label>
+        </p>
+        <p class="col s12 m4 l2">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Rivning</span>
+            </label>
+        </p>
+        <p class="col s12 m6 l3">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Ändrad användning</span>
+            </label>
+        </p>
+        <p class="col s12 m6 l3">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Ändrad planlösning</span>
+            </label>
+        </p>
+        <p class="col s12 m6 l3">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Ändring av bärande konstruktion</span>
+            </label>
+        </p>
+        <p class="col s12 m6 l3">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Byggnadsverk med särskilt bevarandevärde</span>
+            </label>
+        </p>
+    </div>
+    <div class="input-field col s12">
+        <input placeholder="Annat" id="Annat" type="text" class="validate">
+        <label for="annat"></label>
+    </div>
+
+    <h5>Installation eller väsentlig ändring av</h5>
+    <div class="row">
+        <p class="col s12 m4 l2">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Hiss</span>
+            </label>
+        </p>
+        <p class="col s12 m4 l2">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Ventilation</span>
+            </label>
+        </p>
+        <p class="col s12 m4 l2">
+            <label>
+                <input type="checkbox" class="indeterminate-checkbox"/>
+                <span>Brandskydd</span>
+            </label>
+        </p>
+    </div>
+    <div class="input-field col s12">
+        <input placeholder="Annat" id="Annat" type="text" class="validate">
+        <label for="annat"></label>
+    </div>
+
+
+    <button id="printer" class="btn" onclick="myPrinter(); javascript:window.print({id})">Skriv ut!</button>
+    <script src="./build/app.js"></script>
+    <script>
+        function myPrinter() {
+            document.getElementById('printer').style.display='none';
+        }
+    </script>
+
+</body>
+
+</html>
